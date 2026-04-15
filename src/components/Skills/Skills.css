@@ -1,0 +1,112 @@
+.skills {
+  position: relative;
+  overflow: hidden;
+}
+
+.skills__bg-accent {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 247, 255, 0.08), transparent 65%);
+  top: -100px;
+  right: -150px;
+  pointer-events: none;
+}
+
+.skills__header {
+  margin-bottom: var(--space-10);
+}
+
+.skills__filters {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-10);
+}
+
+.skills__filter-btn {
+  padding: var(--space-2) var(--space-5);
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-family: var(--font-family);
+}
+
+.skills__filter-btn:hover {
+  background: var(--color-surface-hover);
+  color: var(--text-primary);
+}
+
+.skills__filter-btn--active {
+  background: var(--gradient);
+  border-color: transparent;
+  color: white;
+  font-weight: 600;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--space-4);
+}
+
+/* Skill Card */
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-6) var(--space-4);
+  cursor: default;
+}
+
+.skill-card__icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-lg);
+  background: rgba(0, 247, 255, 0.1);
+  border: 1px solid rgba(0, 247, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-base);
+}
+
+.skill-card:hover .skill-card__icon-wrap {
+  background: rgba(0, 247, 255, 0.2);
+  border-color: rgba(0, 247, 255, 0.4);
+}
+
+.skill-card__icon {
+  font-size: 1.75rem;
+  color: #00f7ff;
+  transition: var(--transition-base);
+}
+
+.skill-card:hover .skill-card__icon {
+  color: #80fcff;
+}
+
+.skill-card__icon-img {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+  transition: var(--transition-base);
+}
+
+.skill-card:hover .skill-card__icon-img {
+  transform: scale(1.1);
+}
+
+.skill-card__name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+}
