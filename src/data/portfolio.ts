@@ -36,11 +36,10 @@ export const personalInfo = {
   fullName: 'Aaron Eduardo Ortiz Valdivia',
   subtitle: 'Estudiante de 9° ciclo de la carrera de Ingeniería de Sistemas de Información en la Universidad San Ignacio de Loyola (USIL)',
   email: 'aaronov23@gmail.com',
-  location: 'Latinoamérica',
   bio: 'Estudiante de 9no ciclo de Ingeniería en Sistemas de Información en la Universidad San Ignacio de Loyola (USIL), perteneciente al quinto superior, con habilidades en liderazgo, gestión de proyectos y resolución de problemas. Apasionado por la tecnología y el aprendizaje continuo, con experiencia en bases de datos, herramientas analíticas y automatización de procesos. Me caracterizo por un enfoque analítico, organizado y orientado a resultados, con capacidad para aprender rápidamente, documentar procesos y colaborar con equipos multidisciplinarios. Me encuentro en la búsqueda de oportunidades para desarrollar mis conocimientos y aportar soluciones innovadoras en el campo de la ingeniería de sistemas.',
   github: 'https://github.com/mort1zr',
   linkedin: 'https://linkedin.com/in/aaron-ortiz-0b2057311',
-  twitter: 'https://twitter.com/aaron',
+  steam: 'https://steamcommunity.com/profiles/76561198990074923/',
   cv: cvFile,
 };
 
@@ -76,36 +75,11 @@ export const skills: Skill[] = [
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'E-Commerce Backend',
-    description: 'API RESTful completa para una tienda en línea. Incluye autenticación JWT, gestión de productos, carrito de compras, órdenes y pasarela de pago.',
-    tags: ['Java', 'Spring Boot', 'MySQL', 'JWT', 'Docker'],
-    githubUrl: 'https://github.com/aaron',
-    featured: true,
-  },
-  {
-    id: 2,
-    title: 'Task Manager App',
-    description: 'Aplicación de gestión de tareas con tiempo real usando WebSockets. Frontend en React con drag & drop y backend en Spring Boot.',
-    tags: ['React', 'TypeScript', 'Spring Boot', 'WebSockets'],
-    githubUrl: 'https://github.com/aaron',
-    liveUrl: '#',
-    featured: true,
-  },
-  {
-    id: 3,
-    title: 'Auth Microservice',
-    description: 'Microservicio de autenticación con OAuth2, roles y permisos. Implementado con Spring Security y JWT con refresh tokens.',
-    tags: ['Java', 'Spring Security', 'OAuth2', 'Microservices'],
-    githubUrl: 'https://github.com/aaron',
-    featured: true,
-  },
-  {
-    id: 4,
     title: 'Portfolio Personal',
     description: 'Este mismo portafolio — construido con React + TypeScript, Framer Motion y Vite. Diseño dark mode con animaciones fluidas.',
     tags: ['React', 'TypeScript', 'Framer Motion', 'Vite'],
-    githubUrl: 'https://github.com/aaron',
-    liveUrl: '#',
+    githubUrl: 'https://github.com/mort1zr/Portafolio-Aaron',
+    liveUrl: 'https://mort1zr.github.io/Portafolio-Aaron/'
   },
 ];
 

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter, FaPaperPlane, FaSteam } from 'react-icons/fa';
 import { personalInfo } from '../../data/portfolio';
 import './Contact.css';
 
@@ -69,7 +69,6 @@ export default function Contact() {
               <FaMapMarkerAlt className="contact__info-icon" />
               <div>
                 <p className="contact__info-label">Ubicación</p>
-                <p className="contact__info-value">{personalInfo.location}</p>
               </div>
             </div>
 
@@ -99,15 +98,15 @@ export default function Contact() {
                   <span>LinkedIn</span>
                 </a>
                 <a
-                  href={personalInfo.twitter}
+                  href={personalInfo.steam}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="contact__social-btn"
-                  aria-label="Twitter"
-                  id="contact-twitter-btn"
+                  aria-label="Steam"
+                  id="contact-steam-btn"
                 >
-                  <FaTwitter />
-                  <span>Twitter</span>
+                  <FaSteam />
+                  <span>Steam</span>
                 </a>
               </div>
             </div>

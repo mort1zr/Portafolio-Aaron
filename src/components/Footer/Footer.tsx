@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaSteam } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { personalInfo } from '../../data/portfolio';
 import './Footer.css';
@@ -24,7 +24,7 @@ export default function Footer() {
             <span className="gradient-text">{personalInfo.name}</span>
             <span className="footer__logo-bracket"> /&gt;</span>
           </span>
-          <p className="footer__tagline">{personalInfo.subtitle}</p>
+          <p></p>
           <div className="footer__socials">
             <a
               href={personalInfo.github}
@@ -47,14 +47,14 @@ export default function Footer() {
               <FaLinkedin />
             </a>
             <a
-              href={personalInfo.twitter}
+              href={personalInfo.steam}
               target="_blank"
               rel="noopener noreferrer"
               className="footer__social"
-              aria-label="Twitter"
-              id="footer-twitter-link"
+              aria-label="Steam"
+              id="footer-steam-link"
             >
-              <FaTwitter />
+              <FaSteam />
             </a>
           </div>
         </div>
@@ -85,7 +85,6 @@ export default function Footer() {
           <a href={`mailto:${personalInfo.email}`} className="footer__contact-email">
             {personalInfo.email}
           </a>
-          <p className="footer__contact-location">{personalInfo.location}</p>
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 import { motion, type Variants } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown, FaSteam } from 'react-icons/fa';
 import { personalInfo } from '../../data/portfolio';
 import HexGrid from './HexGrid';
 import './Hero.css';
@@ -35,7 +35,7 @@ export default function Hero() {
           animate="visible"
         >
           <motion.div variants={itemVariants}>
-            <span className="badge hero__badge">Disponible para trabajar</span>
+            <span className="badge hero__badge">🟢 Disponible para trabajar</span>
           </motion.div>
 
           <motion.h1 className="hero__title" variants={itemVariants}>
@@ -94,14 +94,14 @@ export default function Hero() {
               <FaLinkedin />
             </a>
             <a
-              href={personalInfo.twitter}
+              href={personalInfo.steam}
               target="_blank"
               rel="noopener noreferrer"
               className="hero__social-link"
-              aria-label="Twitter"
+              aria-label="Steam"
               id="hero-twitter-link"
             >
-              <FaTwitter />
+              <FaSteam />
             </a>
           </motion.div>
         </motion.div>

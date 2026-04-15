@@ -55,7 +55,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             id={`project-${project.id}-live`}
           >
             <FaExternalLinkAlt />
-            <span>Demo</span>
+            <span>Visitar</span>
           </a>
         )}
       </div>

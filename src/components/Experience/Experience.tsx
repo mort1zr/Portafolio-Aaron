@@ -63,13 +63,10 @@ export default function Experience() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="section-label">Trayectoria</p>
           <h2 className="section-title">
-            Experiencia &amp; <span className="gradient-text">Educación</span>
+            Experiencia
           </h2>
-          <p className="section-subtitle">
-            El camino que me ha llevado a donde estoy hoy.
-          </p>
+
           <div className="divider" />
         </motion.div>
 
