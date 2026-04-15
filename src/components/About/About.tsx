@@ -1,5 +1,5 @@
 import { motion, type Variants } from 'framer-motion';
-import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
 import { personalInfo } from '../../data/portfolio';
 import './About.css';
 import avatarImg from '../../assets/descarga.jfif';

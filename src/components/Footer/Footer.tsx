@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart, FaSteam } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaHeart, FaSteam } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { personalInfo } from '../../data/portfolio';
 import './Footer.css';

@@ -1,6 +1,6 @@
 import { motion, type Variants } from 'framer-motion';
 import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown, FaSteam } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowDown, FaSteam } from 'react-icons/fa';
 import { personalInfo } from '../../data/portfolio';
 import HexGrid from './HexGrid';
 import './Hero.css';

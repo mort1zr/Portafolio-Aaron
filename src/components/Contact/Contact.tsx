@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter, FaPaperPlane, FaSteam } from 'react-icons/fa';
+import { FaEnvelope, FaMapMarkerAlt, FaGithub, FaLinkedin, FaPaperPlane, FaSteam } from 'react-icons/fa';
 import { personalInfo } from '../../data/portfolio';
 import './Contact.css';
 
