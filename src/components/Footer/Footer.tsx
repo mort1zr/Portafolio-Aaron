@@ -24,7 +24,7 @@ export default function Footer() {
             <span className="gradient-text">{personalInfo.name}</span>
             <span className="footer__logo-bracket"> /&gt;</span>
           </span>
-          <p className="footer__tagline">{personalInfo.title}</p>
+          <p className="footer__tagline">{personalInfo.subtitle}</p>
           <div className="footer__socials">
             <a
               href={personalInfo.github}
