@@ -1,5 +1,6 @@
 import { motion, type Variants } from 'framer-motion';
-import { FaEnvelope } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaEnvelope, FaCheck, FaCopy } from 'react-icons/fa';
 import { personalInfo } from '../../data/portfolio';
 import './About.css';
 import avatarImg from '../../assets/descarga.jfif';
@@ -11,6 +12,12 @@ const fadeUp: Variants = {
 
 
 export default function About() {
+  const [copied, setCopied] = useState(false);
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(personalInfo.email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
   return (
     <section id="about" className="section about">
       <div className="section-inner about__inner">
@@ -55,6 +62,23 @@ export default function About() {
               <a href={`mailto:${personalInfo.email}`} className="about__detail-link">
                 {personalInfo.email}
               </a>
+              <button
+                onClick={handleCopyEmail}
+                aria-label="Copiar correo"
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: copied ? 'var(--primary)' : 'var(--text-secondary)',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  padding: '0.2rem',
+                  transition: 'color 0.2s',
+                }}
+              >
+                {copied ? <FaCheck /> : <FaCopy />}
+              </button>
             </div>
           </motion.div>
 

@@ -1,4 +1,5 @@
-import { FaGithub, FaLinkedin, FaHeart, FaSteam } from 'react-icons/fa';
+import { useState } from 'react';
+import { FaGithub, FaLinkedin, FaHeart, FaSteam, FaCopy, FaCheck } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import { personalInfo } from '../../data/portfolio';
 import './Footer.css';
@@ -9,11 +10,17 @@ const NAV_LINKS = [
   { id: 'skills', label: 'Habilidades' },
   { id: 'projects', label: 'Proyectos' },
   { id: 'experience', label: 'Experiencia' },
-  { id: 'contact', label: 'Contacto' },
 ];
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText(personalInfo.email);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
   return (
     <footer className="footer" id="footer">
       <div className="footer__top-line" aria-hidden="true" />
@@ -82,9 +89,28 @@ export default function Footer() {
 
         <div className="footer__contact">
           <p className="footer__nav-title">Contacto</p>
-          <a href={`mailto:${personalInfo.email}`} className="footer__contact-email">
-            {personalInfo.email}
-          </a>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <a href={`mailto:${personalInfo.email}`} className="footer__contact-email">
+              {personalInfo.email}
+            </a>
+            <button 
+              onClick={handleCopyEmail}
+              aria-label="Copiar correo"
+              style={{
+                background: 'none',
+                border: 'none',
+                color: copied ? 'var(--primary)' : 'var(--text-secondary)',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0.2rem',
+                transition: 'color 0.2s',
+              }}
+            >
+              {copied ? <FaCheck /> : <FaCopy />}
+            </button>
+          </div>
         </div>
       </div>
 

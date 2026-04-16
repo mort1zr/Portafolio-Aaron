@@ -19,6 +19,10 @@ const itemVariants: Variants = {
 };
 
 export default function Hero() {
+  const handleEmailClick = () => {
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=aaronov23@gmail.com", "_blank");
+  };
+
   return (
     <section id="hero" className="hero section">
       {/* Background glows */}
@@ -59,17 +63,13 @@ export default function Hero() {
             >
               Ver proyectos
             </Link>
-            <Link
-              to="contact"
-              spy
-              smooth
-              duration={700}
-              offset={-72}
+            <button
+              onClick={handleEmailClick}
               className="btn-secondary"
               id="hero-contact-btn"
             >
               Contactarme
-            </Link>
+            </button>
           </motion.div>
 
           <motion.div className="hero__socials" variants={itemVariants}>
