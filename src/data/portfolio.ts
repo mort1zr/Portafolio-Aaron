@@ -64,12 +64,18 @@ export const skills: Skill[] = [
   { name: "SQL Server", icon: "sql-server.svg", category: "database" },
   { name: 'Oracle', icon: 'oracle-corporation-logo.svg', category: 'database' },
   { name: 'MongoDB', icon: 'MongoDB_dark.svg', category: 'database' },
+  { name: 'Supabase', icon: 'Supabase.svg', category: 'database' },
   // Tools
   { name: 'Git', icon: 'git.svg', category: 'tools' },
   { name: 'GitHub', icon: 'GitHub_dark.svg', category: 'tools' },
   { name: 'Docker', icon: 'docker.svg', category: 'tools' },
   { name: "Postman", icon: "postman.svg", category: "tools" },
-  { name: "Figma", icon: "figma.svg", category: "tools" }
+  { name: "Figma", icon: "figma.svg", category: "tools" },
+  { name: "Power BI", icon: "PowerBI.svg", category: "tools"},
+  { name: "Bizagi", icon: "Bizagi.svg", category: "tools"},
+  { name: "n8n", icon: "n8n.svg", category: "tools"},
+  { name: "Google Apps Script", icon: "AppsScript.svg", category: "tools"},
+  { name: "Microsoft Excel", icon: "Excel.svg", category: "tools"}
 ];
 
 export const projects: Project[] = [
